@@ -1,0 +1,11 @@
+product_id,product_name,category,price,stock_quantity
+1001,Laptop Pro,Electronics,500.00,25
+1002,Smartphone X,Electronics,900.00,50
+1003,Wireless Headphones,Electronics,750.00,100
+1004,Office Chair,Furniture,600.00,30
+1005,Desk Lamp,Furniture,500.00,45
+1006,Coffee Maker,Appliances,120.00,60
+1007,Blender,Appliances,80.00,40
+1008,Keyboard,Electronics,60.00,75
+1009,Mouse,Electronics,40.00,100
+1010,Monitor,Electronics,350.00,35
