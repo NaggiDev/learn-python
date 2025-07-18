@@ -14,49 +14,87 @@
 - [-] 2. Implement Basic Level - Python Fundamentals Module
 
 
-  - [-] 2.1 Create Python Fundamentals module README with learning objectives
+  - [x] 2.1 Create Python Fundamentals module README with learning objectives
+
+
 
     - Write clear module overview and prerequisites
     - Define learning objectives and outcomes
     - _Requirements: 1.1, 1.3, 7.1_
   
-  - [ ] 2.2 Develop Python installation and setup lesson
+  - [x] 2.2 Develop Python installation and setup lesson
+
+
+
+
+
     - Create step-by-step installation guide for different operating systems
     - Include environment setup instructions
     - Add troubleshooting section for common issues
     - _Requirements: 1.1, 8.1_
   
-  - [ ] 2.3 Implement variables and data types lesson and exercises
+  - [x] 2.3 Implement variables and data types lesson and exercises
+
+
+
+
+
     - Create lesson explaining Python's data types and variables
     - Develop exercises for practicing variable declaration and type conversion
     - Write solution code and tests
     - _Requirements: 1.2, 1.3, 4.1, 5.1_
   
-  - [ ] 2.4 Implement basic operators lesson and exercises
+  - [x] 2.4 Implement basic operators lesson and exercises
+
+
+
+
+
     - Create lesson covering arithmetic, comparison, and logical operators
     - Develop exercises for operator usage and precedence
     - Write solution code and tests
     - _Requirements: 1.2, 1.3, 4.1_
   
-  - [ ] 2.5 Implement input/output operations lesson and exercises
+  - [x] 2.5 Implement input/output operations lesson and exercises
+
+
+
+
+
+
     - Create lesson on console I/O and string formatting
     - Develop exercises for input handling and output formatting
     - Write solution code and tests
     - _Requirements: 1.2, 1.3, 4.1_
   
-  - [ ] 2.6 Implement control flow lesson and exercises
+  - [x] 2.6 Implement control flow lesson and exercises
+
+
+
+
+
     - Create lesson on if/else statements and loops
     - Develop exercises for conditional logic and iteration
     - Write solution code and tests
     - _Requirements: 1.2, 1.3, 4.1, 5.2_
   
-  - [ ] 2.7 Implement functions and scope lesson and exercises
+  - [x] 2.7 Implement functions and scope lesson and exercises
+
+
+
+
+
     - Create lesson on function definition, parameters, and scope
     - Develop exercises for function creation and usage
     - Write solution code and tests
     - _Requirements: 1.2, 1.3, 4.1_
   
-  - [ ] 2.8 Develop command-line calculator mini-project
+  - [x] 2.8 Develop command-line calculator mini-project
+
+
+
+
+
     - Create project requirements and specifications
     - Develop starter code and test cases
     - Implement reference solution
