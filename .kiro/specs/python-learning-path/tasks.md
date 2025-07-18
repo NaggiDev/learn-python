@@ -11,7 +11,11 @@
   - Establish documentation templates for consistency
   - _Requirements: 1.1, 2.1, 3.1, 7.1_
 
-- [-] 2. Implement Basic Level - Python Fundamentals Module
+- [ ] 2. Implement Basic Level - Python Fundamentals Module
+
+
+
+
 
 
   - [x] 2.1 Create Python Fundamentals module README with learning objectives
@@ -265,7 +269,12 @@
     - Write solution code and tests
     - _Requirements: 2.1, 2.2, 4.1_
   
-  - [ ] 6.5 Implement magic methods lesson and exercises
+  - [x] 6.5 Implement magic methods lesson and exercises
+
+
+
+
+
 
 
     - Create lesson on Python's special methods
@@ -273,7 +282,12 @@
     - Write solution code and tests
     - _Requirements: 2.1, 2.2, 4.1_
   
-  - [ ] 6.6 Develop library management system mini-project
+  - [x] 6.6 Develop library management system mini-project
+
+
+
+
+
     - Create project requirements and specifications
     - Develop starter code and test cases
     - Implement reference solution

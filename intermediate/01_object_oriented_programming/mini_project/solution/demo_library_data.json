@@ -1,0 +1,170 @@
+{
+  "library_name": "Community Library",
+  "books": [
+    {
+      "title": "Python Crash Course",
+      "author": "Eric Matthes",
+      "isbn": "978-1593279288",
+      "publication_year": 2019,
+      "genre": "Programming",
+      "is_available": false
+    },
+    {
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "isbn": "978-0132350884",
+      "publication_year": 2008,
+      "genre": "Programming",
+      "is_available": false
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas",
+      "isbn": "978-0201616224",
+      "publication_year": 1999,
+      "genre": "Programming",
+      "is_available": false
+    },
+    {
+      "title": "Design Patterns",
+      "author": "Gang of Four",
+      "isbn": "978-0201633612",
+      "publication_year": 1994,
+      "genre": "Programming",
+      "is_available": true
+    },
+    {
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen",
+      "isbn": "978-0262033848",
+      "publication_year": 2009,
+      "genre": "Computer Science",
+      "is_available": true
+    },
+    {
+      "title": "The Art of Computer Programming",
+      "author": "Donald E. Knuth",
+      "isbn": "978-0201896831",
+      "publication_year": 1997,
+      "genre": "Computer Science",
+      "is_available": true
+    },
+    {
+      "title": "Code Complete",
+      "author": "Steve McConnell",
+      "isbn": "978-0735619678",
+      "publication_year": 2004,
+      "genre": "Programming",
+      "is_available": true
+    },
+    {
+      "title": "Refactoring",
+      "author": "Martin Fowler",
+      "isbn": "978-0201485677",
+      "publication_year": 1999,
+      "genre": "Programming",
+      "is_available": true
+    },
+    {
+      "title": "Head First Design Patterns",
+      "author": "Eric Freeman",
+      "isbn": "978-0596007126",
+      "publication_year": 2004,
+      "genre": "Programming",
+      "is_available": true
+    },
+    {
+      "title": "Effective Python",
+      "author": "Brett Slatkin",
+      "isbn": "978-0134853987",
+      "publication_year": 2019,
+      "genre": "Programming",
+      "is_available": true
+    }
+  ],
+  "patrons": [
+    {
+      "patron_id": "P001",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@email.com",
+      "phone": "555-0101",
+      "registration_date": "2025-07-19",
+      "checkout_count": 1,
+      "max_books": 5
+    },
+    {
+      "patron_id": "P002",
+      "name": "Bob Smith",
+      "email": "bob.smith@email.com",
+      "phone": "555-0102",
+      "registration_date": "2025-07-19",
+      "checkout_count": 1,
+      "max_books": 5
+    },
+    {
+      "patron_id": "P003",
+      "name": "Carol Davis",
+      "email": "carol.davis@email.com",
+      "phone": "555-0103",
+      "registration_date": "2025-07-19",
+      "checkout_count": 1,
+      "max_books": 5
+    },
+    {
+      "patron_id": "P004",
+      "name": "David Wilson",
+      "email": "david.wilson@email.com",
+      "phone": "555-0104",
+      "registration_date": "2025-07-19",
+      "checkout_count": 0,
+      "max_books": 5
+    },
+    {
+      "patron_id": "P005",
+      "name": "Eva Brown",
+      "email": "eva.brown@email.com",
+      "phone": "555-0105",
+      "registration_date": "2025-07-19",
+      "checkout_count": 0,
+      "max_books": 5
+    }
+  ],
+  "checkout_records": [
+    {
+      "book_title": "Python Crash Course",
+      "book_isbn": "978-1593279288",
+      "patron_name": "Alice Johnson",
+      "patron_id": "P001",
+      "checkout_date": "2025-07-19",
+      "due_date": "2025-08-02",
+      "return_date": null,
+      "is_overdue": false,
+      "days_overdue": 0,
+      "fine_amount": 0.0
+    },
+    {
+      "book_title": "Clean Code",
+      "book_isbn": "978-0132350884",
+      "patron_name": "Bob Smith",
+      "patron_id": "P002",
+      "checkout_date": "2025-07-19",
+      "due_date": "2025-08-02",
+      "return_date": null,
+      "is_overdue": false,
+      "days_overdue": 0,
+      "fine_amount": 0.0
+    },
+    {
+      "book_title": "The Pragmatic Programmer",
+      "book_isbn": "978-0201616224",
+      "patron_name": "Carol Davis",
+      "patron_id": "P003",
+      "checkout_date": "2025-07-19",
+      "due_date": "2025-08-02",
+      "return_date": null,
+      "is_overdue": false,
+      "days_overdue": 0,
+      "fine_amount": 0.0
+    }
+  ]
+}
