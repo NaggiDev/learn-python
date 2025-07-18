@@ -205,18 +205,28 @@
     - Implement reference solution
     - _Requirements: 1.4, 4.2, 9.1, 10.2_
 
-- [ ] 5. Implement Basic Level Capstone Project
-  - [ ] 5.1 Design command-line task manager application requirements
+- [x] 5. Implement Basic Level Capstone Project
+
+
+
+
+  - [x] 5.1 Design command-line task manager application requirements
+
+
     - Define project scope and features
     - Create user stories and acceptance criteria
     - _Requirements: 1.6, 4.2, 9.1_
   
-  - [ ] 5.2 Develop project structure and starter code
+  - [x] 5.2 Develop project structure and starter code
+
+
     - Create directory structure and README
     - Implement starter code and test framework
     - _Requirements: 1.6, 4.2, 10.2_
   
-  - [ ] 5.3 Implement reference solution
+  - [x] 5.3 Implement reference solution
+
+
     - Create complete solution with documentation
     - Ensure solution covers all requirements
     - _Requirements: 1.6, 4.2, 9.1, 10.2_
