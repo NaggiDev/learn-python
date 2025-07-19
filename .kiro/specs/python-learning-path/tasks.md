@@ -513,20 +513,36 @@
     - Write solution code and tests
     - _Requirements: 3.1, 3.2, 4.1, 5.1_
   
-  - [-] 11.4 Implement searching and sorting lesson and exercises
+  - [x] 11.4 Implement searching and sorting lesson and exercises
+
+
+
+
+
+
 
     - Create lesson on common algorithms and their implementations
     - Develop exercises for algorithm implementation
     - Write solution code and tests
     - _Requirements: 3.1, 3.2, 4.1_
   
-  - [ ] 11.5 Implement trees and graphs lesson and exercises
+  - [x] 11.5 Implement trees and graphs lesson and exercises
+
+
+
+
+
     - Create lesson on tree and graph data structures
     - Develop exercises for tree and graph operations
     - Write solution code and tests
     - _Requirements: 3.1, 3.2, 4.1_
   
-  - [ ] 11.6 Develop algorithm implementation challenge mini-project
+  - [x] 11.6 Develop algorithm implementation challenge mini-project
+
+
+
+
+
     - Create project requirements and specifications
     - Develop starter code and test cases
     - Implement reference solution
