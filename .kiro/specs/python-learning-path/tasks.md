@@ -771,14 +771,29 @@
     - Organize by topic and difficulty level
     - _Requirements: 7.3, 8.1, 8.6_
 
-- [ ] 17. Implement cross-level review exercises
-  - [ ] 17.1 Create review exercises connecting basic and intermediate concepts
+- [-] 17. Implement cross-level review exercises
+
+
+
+  - [x] 17.1 Create review exercises connecting basic and intermediate concepts
+
+
     - Develop exercises that combine multiple basic concepts
     - Create exercises that bridge basic and intermediate topics
     - Write solution code and tests
     - _Requirements: 5.1, 5.2, 5.4, 5.5_
   
-  - [ ] 17.2 Create review exercises connecting intermediate and advanced concepts
+  - [x] 17.2 Create review exercises connecting intermediate and advanced concepts
+
+
+
+
+
+
+
+
+
+
     - Develop exercises that combine multiple intermediate concepts
     - Create exercises that bridge intermediate and advanced topics
     - Write solution code and tests
