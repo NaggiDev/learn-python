@@ -1,0 +1,7 @@
+# Testing requirements
+-r base.txt
+
+pytest>=7.1.0
+pytest-cov>=3.0.0
+pytest-mock>=3.8.0
+coverage>=6.4.0

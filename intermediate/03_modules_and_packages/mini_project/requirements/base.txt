@@ -1,0 +1,2 @@
+# Base requirements for devtools package
+# No external dependencies required for core functionality

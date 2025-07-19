@@ -1,0 +1,77 @@
+[flake8]
+# Maximum line length
+max-line-length = 88
+
+# Maximum complexity
+max-complexity = 10
+
+# Ignore specific error codes
+ignore = 
+    # E203: whitespace before ':' (conflicts with black)
+    E203,
+    # W503: line break before binary operator (conflicts with black)
+    W503,
+    # E501: line too long (handled by black)
+    E501
+
+# Exclude directories and files
+exclude = 
+    .git,
+    __pycache__,
+    .pytest_cache,
+    .mypy_cache,
+    venv,
+    env,
+    .venv,
+    .env,
+    build,
+    dist,
+    *.egg-info,
+    migrations,
+    node_modules
+
+# Per-file ignores
+per-file-ignores =
+    # Allow unused imports in __init__.py files
+    __init__.py:F401,
+    # Allow long lines in settings files
+    settings.py:E501,
+    # Allow star imports in test files
+    test_*.py:F403,F405
+
+# Select specific error codes to check
+select = 
+    E,  # pycodestyle errors
+    W,  # pycodestyle warnings
+    F,  # pyflakes
+    C,  # mccabe complexity
+
+# Show source code for each error
+show-source = True
+
+# Show pep8 violation statistics
+statistics = True
+
+# Count errors and warnings
+count = True
+
+# Format for error messages
+format = %(path)s:%(row)d:%(col)d: %(code)s %(text)s
+
+# Benchmark mode
+benchmark = False
+
+# Enable off-by-default checks
+enable-extensions = 
+    # Check for trailing commas
+    C812,
+    # Check for trailing whitespace
+    W291,
+    # Check for blank line at end of file
+    W292
+
+# Application import names (for import order checking)
+application-import-names = myapp
+
+# Import order style
+import-order-style = google
