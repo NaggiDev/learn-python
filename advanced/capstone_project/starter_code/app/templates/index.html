@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Data Analytics Dashboard{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="jumbotron bg-primary text-white p-5 rounded mb-4">
+            <h1 class="display-4">Welcome to Data Analytics Dashboard</h1>
+            <p class="lead">
+                A comprehensive platform for data analysis, visualization, and dashboard creation.
+                Upload your datasets, perform advanced analytics, and create beautiful visualizations.
+            </p>
+            <hr class="my-4">
+            <p>Get started by uploading your first dataset or exploring the demo data.</p>
+            <a class="btn btn-light btn-lg" href="{{ url_for('main.datasets') }}" role="button">
+                <i class="fas fa-upload"></i> Upload Dataset
+            </a>
+            <a class="btn btn-outline-light btn-lg ms-2" href="{{ url_for('main.dashboard') }}" role="button">
+                <i class="fas fa-tachometer-alt"></i> View Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                <h5 class="card-title">Dataset Management</h5>
+                <p class="card-text">
+                    Upload and manage your CSV, JSON, and Excel files.
+                    Preview data and get instant insights about your datasets.
+                </p>
+                <a href="{{ url_for('main.datasets') }}" class="btn btn-primary">Manage Datasets</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-chart-bar fa-3x text-success mb-3"></i>
+                <h5 class="card-title">Data Analysis</h5>
+                <p class="card-text">
+                    Perform statistical analysis, correlation studies, and distribution analysis.
+                    Generate automated reports with key insights.
+                </p>
+                <a href="{{ url_for('main.analysis') }}" class="btn btn-success">Start Analysis</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <i class="fas fa-chart-line fa-3x text-info mb-3"></i>
+                <h5 class="card-title">Visualizations</h5>
+                <p class="card-text">
+                    Create interactive charts, graphs, and dashboards.
+                    Share your insights with beautiful visualizations.
+                </p>
+                <a href="{{ url_for('main.visualizations') }}" class="btn btn-info">Create Charts</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-12">
+        <h2>Features</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success"></i> Multiple file format support (CSV, JSON, Excel)</li>
+                    <li><i class="fas fa-check text-success"></i> Real-time data processing</li>
+                    <li><i class="fas fa-check text-success"></i> Statistical analysis tools</li>
+                    <li><i class="fas fa-check text-success"></i> Interactive visualizations</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check text-success"></i> Custom dashboard creation</li>
+                    <li><i class="fas fa-check text-success"></i> Automated report generation</li>
+                    <li><i class="fas fa-check text-success"></i> RESTful API access</li>
+                    <li><i class="fas fa-check text-success"></i> User authentication and security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal (shown if user is not authenticated) -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login Required</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username or Email</label>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="remember">
+                        <label class="form-check-label" for="remember">Remember me</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+                <button type="button" class="btn btn-link" onclick="showRegister()">Need an account?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="mb-3">
+                        <label for="regUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="regUsername" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="regEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="regEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="regPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="regPassword" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="regPasswordConfirm" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="regPasswordConfirm" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="register()">Create Account</button>
+                <button type="button" class="btn btn-link" onclick="showLogin()">Already have an account?</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Check authentication status on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        checkAuthStatus();
+    });
+</script>
+{% endblock %}

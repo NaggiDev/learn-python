@@ -707,18 +707,39 @@
     - Implement reference solution
     - _Requirements: 3.1, 3.6, 4.2, 9.1, 10.2_
 
-- [ ] 15. Implement Advanced Level Capstone Project
-  - [ ] 15.1 Design full-stack web application with data analysis features
+- [-] 15. Implement Advanced Level Capstone Project
+
+
+
+  - [x] 15.1 Design full-stack web application with data analysis features
+
+
     - Define project scope and features
     - Create user stories and acceptance criteria
     - _Requirements: 3.6, 4.2, 9.1_
   
-  - [ ] 15.2 Develop project structure and starter code
+  - [x] 15.2 Develop project structure and starter code
+
+
+
+
+
+
+
     - Create directory structure and README
     - Implement starter code and test framework
     - _Requirements: 3.6, 4.2, 10.2_
   
-  - [ ] 15.3 Implement reference solution
+  - [x] 15.3 Implement reference solution
+
+
+
+
+
+
+
+
+
     - Create complete solution with documentation
     - Ensure solution covers all requirements
     - _Requirements: 3.6, 4.2, 9.1, 10.2_
