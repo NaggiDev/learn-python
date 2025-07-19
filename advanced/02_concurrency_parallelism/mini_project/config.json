@@ -1,0 +1,28 @@
+{
+    "urls": [
+        "https://httpbin.org/html",
+        "https://httpbin.org/json",
+        "https://httpbin.org/delay/1",
+        "https://httpbin.org/delay/2",
+        "https://httpbin.org/status/200",
+        "https://httpbin.org/headers",
+        "https://httpbin.org/user-agent"
+    ],
+    "concurrency": {
+        "max_workers": 5,
+        "rate_limit": 1.0,
+        "timeout": 10,
+        "retries": 3
+    },
+    "extraction": {
+        "extract_title": true,
+        "extract_links": true,
+        "extract_text": false,
+        "max_text_length": 1000
+    },
+    "output": {
+        "format": "json",
+        "filename": "scraped_data.json",
+        "include_metadata": true
+    }
+}
